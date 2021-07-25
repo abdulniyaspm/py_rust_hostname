@@ -1,0 +1,18 @@
+[package]
+name = "py_rust_hostname"
+version = "0.1.0"
+authors = ["abdulniyaspm"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "py_rust_hostname"
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = "0.2"
+
+[dependencies.pyo3]
+version = "0.14.1"
+features = ["extension-module"]
